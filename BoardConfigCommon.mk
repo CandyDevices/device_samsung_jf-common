@@ -40,7 +40,7 @@ BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom user_debug=31 zcache msm_rtb.f
 BOARD_KERNEL_BASE := 0x80200000
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000
 BOARD_KERNEL_PAGESIZE := 2048
-TARGET_KERNEL_CONFIG := cyanogen_jf_defconfig
+TARGET_KERNEL_CONFIG := cake_jf_defconfig
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
 TARGET_KERNEL_SOURCE := kernel/samsung/jf
 
@@ -126,6 +126,9 @@ USE_DEVICE_SPECIFIC_DATASERVICES := true
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy
+
+# Vold
+#TARGET_KERNEL_HAVE_NTFS := true
 
 # Wifi module
 BOARD_WLAN_DEVICE := bcmdhd
