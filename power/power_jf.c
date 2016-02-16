@@ -26,7 +26,7 @@
 #include <hardware/power.h>
 
 #define CPU_PATH_MAX 	   "/sys/kernel/msm_thermal/user_maxfreq"
-#define LOW_POWER_MAX_FREQ "756000"
+#define LOW_POWER_MAX_FREQ "1134000"
 #define NORMAL_MAX_FREQ    "1890000"
 
 static bool low_power_mode;
